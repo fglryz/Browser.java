@@ -1,6 +1,6 @@
 package day36_interitance;
 
-public class EncapsulationStudent {
+public class Student {
     private String name,schoolName;
     private int age;
     private char gender,grade;
@@ -8,7 +8,7 @@ public class EncapsulationStudent {
     public static boolean isHuman=true;
 
 
-    public EncapsulationStudent(String name, String schoolName, int age, char gender, char grade) {
+    public Student(String name, String schoolName, int age, char gender, char grade) {
         setName(name);
         setSchoolName( schoolName);
         setAge(age);
@@ -34,7 +34,7 @@ public class EncapsulationStudent {
     public String getSchoolName(){
         return schoolName;
     }
-    public void setSchoolName(String s){
+    public void setSchoolName(String schoolName){
         this.schoolName=schoolName;
     }
     public char getGender(){
