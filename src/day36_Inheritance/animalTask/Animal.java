@@ -1,4 +1,4 @@
-package day36_Inheritance.encapsulation.animalTask;
+package day36_Inheritance.animalTask;
 
 public class Animal {
 
@@ -6,13 +6,15 @@ public class Animal {
     public char gender;
     public String size;
     public String color;
+    public int age;
 
-    public void setInfo(String name, String breed, char gender, String size, String color) {
+    public void setInfo(String name, String breed, char gender, String size, String color,int age) {
         this.name = name;
         this.breed = breed;
         this.gender = gender;
         this.size = size;
         this.color = color;
+        this.age=age;
     }
     public void eat(){
         System.out.println(name+ " is eating");
