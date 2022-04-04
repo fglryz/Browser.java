@@ -4,6 +4,9 @@ public class EncapsulationStudent {
     private String name,schoolName;
     private int age;
     private char gender,grade;
+    public static boolean isStudent=true;
+    public static boolean isHuman=true;
+
 
     public EncapsulationStudent(String name, String schoolName, int age, char gender, char grade) {
         setName(name);
