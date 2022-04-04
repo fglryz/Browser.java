@@ -20,6 +20,11 @@ public class Person {
     }
 
     public void setAge(int age) {
+        if(age<=0||age>150){
+            System.err.println("Invalid age:"+age);
+            System.exit(0);
+        }
+
         this.age = age;
     }
 }
