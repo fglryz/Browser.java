@@ -23,4 +23,14 @@ public class Phone {
         System.out.println(brand+ " "+model+" is texting");
     }
 
+    public String toString() {
+        return "Phone{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", size='" + size + '\'' +
+                ", color='" + color + '\'' +
+                ", price=$" + price +
+                ", has battery" + hasBattery +
+                '}';
+    }
 }
