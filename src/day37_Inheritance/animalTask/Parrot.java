@@ -1,12 +1,12 @@
-package day37_Inheritance;
+package day37_Inheritance.animalTask;
 
-public class Parrot extends Animal {
+public class Parrot extends Animal{
     //public String parrotWingColor;
 
 
     public Parrot(String name, String breed, char gender, String size, String color, int age,String parrotWingColor) {
         super(name, breed, gender, size, color, age );
-       // this.parrotWingColor=parrotWingColor;
+        // this.parrotWingColor=parrotWingColor;
     }
     public void sing(){
         System.out.println(name+" is singing");
