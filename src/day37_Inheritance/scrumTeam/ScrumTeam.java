@@ -1,6 +1,7 @@
 package day37_Inheritance.scrumTeam;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ScrumTeam {
     public ProoductOwner PO;
@@ -18,5 +19,21 @@ public class ScrumTeam {
     public void addTester(Tester tester){
         testers.add(tester);
 
+    }
+    public void addTesters(Tester[] testers){
+        this.testers.addAll(Arrays.asList(testers));
+    }
+    public void removeTester(int id){
+        testers.removeIf(p->p.id==id);
+    }
+    public void addDeveloper(Developer developer){
+        developers.add(developer);
+
+    }
+    public  void addDevelopers(Developer[] developers){
+        this.developers.addAll(Arrays.asList());
+    }
+    public void removeDeveloper(int id){
+        developers.removeIf(p->p.id==id);
     }
 }
