@@ -34,8 +34,14 @@ public class AmazonInc {
 
         for (Tester tester : scrumTeam.testers) {
             System.out.println(tester.name+" : "+tester.salary);
+            for (Developer developer : scrumTeam.developers) {
+                System.out.println(developer.name+": "+developer.salary);
+                }
+
+            }
+
             
         }
 
     }
-}
+
