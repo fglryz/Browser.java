@@ -31,7 +31,7 @@ public class ScrumTeam {//has a relationship
 
     }
     public  void addDevelopers(Developer[] developers){
-        this.developers.addAll(Arrays.asList());
+        this.developers.addAll(Arrays.asList(developers));
     }
     public void removeDeveloper(int id){
         developers.removeIf(p->p.id==id);

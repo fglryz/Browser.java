@@ -26,9 +26,10 @@ public class AmazonInc {
 
 
         ScrumTeam scrumTeam=new ScrumTeam(po,ba,sm);
-        scrumTeam.addDeveloper(developer1);
-        scrumTeam.addTesters(testers);scrumTeam.addDevelopers(developers);
+        scrumTeam.addDevelopers(developers);
+        scrumTeam.addTesters(testers);
         System.out.println(scrumTeam);
+
         System.out.println("----------------------------------------");
 
         for (Tester tester : scrumTeam.testers) {
