@@ -21,10 +21,10 @@ public class Employee extends Person{
     @Override
     public String toString() {
         return "Employee{" +
-                ", name='" + name + '\'' +
+                "name='" + name + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
-                "jobTitle='" + jobTitle + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
                 ", id=" + id +
                 ", salary=$" + salary +
                 ", companyName='" + companyName + '\'' +

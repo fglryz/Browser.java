@@ -24,5 +24,17 @@ public class AmazonInc {
         Developer developer5=new Developer("Evelyn", 30, 'F', "JS Developer", 788, 160000, company);
         Developer[] developers={developer1,developer2,developer3,developer4,developer5};
 
+
+        ScrumTeam scrumTeam=new ScrumTeam(po,ba,sm);
+        scrumTeam.addDeveloper(developer1);
+        scrumTeam.addTesters(testers);scrumTeam.addDevelopers(developers);
+        System.out.println(scrumTeam);
+        System.out.println("----------------------------------------");
+
+        for (Tester tester : scrumTeam.testers) {
+            System.out.println(tester.name+" : "+tester.salary);
+            
+        }
+
     }
 }
