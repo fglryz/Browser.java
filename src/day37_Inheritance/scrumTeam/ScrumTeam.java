@@ -3,7 +3,7 @@ package day37_Inheritance.scrumTeam;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class ScrumTeam {
+public class ScrumTeam {//has a relationship
     public ProoductOwner PO;
     public BusinessAnalyst BA;
     public ScrumMaster SM;
