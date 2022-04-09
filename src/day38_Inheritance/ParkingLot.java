@@ -1,4 +1,4 @@
-package day38_Inheritance.carTask;
+package day38_Inheritance;
 
 public class ParkingLot {
     public static void main(String[] args) {
