@@ -7,7 +7,7 @@ public class Teacher extends Employee {
 
     @Override
     public void work() {
-        System.out.println(getJobTitle()+" "+getName()+" is working");
+        System.out.println(getJobTitle()+" "+getName()+" is teaching");
     }
 }
 /*
