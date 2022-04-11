@@ -25,6 +25,24 @@ public class CydeoObject {
         teacher.work();
         tester.work();
         student.study();
+        System.out.println("-------------------------");
+        developer.eat();
+        developer.drink();
+        developer.sleep();
+
+        developer.fixingBugs();
+        System.out.println("-------------------------");
+
+        tester.eat();
+        tester.drink();
+        tester.eat();
+        tester.createTicket();
+        System.out.println("-------------------------");
+        teacher.eat();
+        teacher.drink();
+        teacher.sleep();
+        teacher.work();
+        System.out.println("-------------------------");
 
 
 
