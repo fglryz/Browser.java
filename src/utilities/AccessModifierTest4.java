@@ -7,5 +7,7 @@ public class AccessModifierTest4 extends ProtectedAccessModifiers {
        // System.out.println(AccessModifierTest4.name1);
         System.out.println(AccessModifierTest4.name2);
 
+       // AccessModifierTest4.method1;
+        AccessModifierTest4.method2();
     }
 }
