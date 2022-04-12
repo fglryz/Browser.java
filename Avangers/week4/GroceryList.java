@@ -29,6 +29,7 @@ public class GroceryList {//blue print for all my shopping lists
         groceryLists.set(position,newItem);
         System.out.println("Grocery Item "+ (position+1)+" has been modified.");
     }
+
     public void removeGroceryItem(int position){
         groceryLists.remove(position);
 
