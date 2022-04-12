@@ -20,6 +20,7 @@ public class GroceryTest {
             input.nextLine();
 
             switch (choice){
+
                 case 0:
                     printInstructions();
                     break;
