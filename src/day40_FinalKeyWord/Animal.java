@@ -3,15 +3,15 @@ package day40_FinalKeyWord;
 public class Animal {
     private String name;
     private final String breed;
-    private final  char gender;
-    private  final String color;
+    private final char gender;
+    private final String color;
     private String size;
     private String age;
 
 
     public Animal(String name, String breed, char gender, String color, String size, String age) {
         this.name = name;
-        this.breed= breed;
+        this.breed = breed;
         this.gender = gender;
         this.color = color;
         this.size = size;
@@ -53,5 +53,14 @@ public class Animal {
 
     public void setAge(String age) {
         this.age = age;
+    }
+    //------------------setters-----------------------
+
+    public void eat() {
+        System.out.println(name + " is eating");
+    }
+
+    public final void drink() {
+        System.out.println(name + " is drinking water");
     }
 }
