@@ -6,10 +6,10 @@ public class Animal {
     private final char gender;
     private final String color;
     private String size;
-    private String age;
+    private int age;
 
 
-    public Animal(String name, String breed, char gender, String color, String size, String age) {
+    public Animal(String name, String breed, char gender, String color, String size, int age) {
         this.name = name;
         this.breed = breed;
         this.gender = gender;
@@ -38,9 +38,10 @@ public class Animal {
         return size;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
+
     //------------------setters-----------------------
 
     public void setName(String name) {
@@ -51,9 +52,10 @@ public class Animal {
         this.size = size;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
+
     //------------------setters-----------------------
 
     public void eat() {
