@@ -2,7 +2,7 @@ package week4;
 
 import java.util.ArrayList;
 
-public class GroceryList {//blue print for all my shopping lists
+public class GroceryList {//blueprint for all my shopping lists
 
     private ArrayList<String>groceryLists;
     {

@@ -2,7 +2,7 @@ package week4;
 
 import java.util.Scanner;
 
-public class GroseryTestStatic {
+public class GroceryTestStatic {
     // 1. Make your variables and reference variables Global for the Class
 // 2. if we are going to use this variables or references inside main method, we need to make them static
 
