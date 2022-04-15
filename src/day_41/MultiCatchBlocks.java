@@ -4,27 +4,26 @@ import day39_Recap.cydeoTask.Employee;
 
 public class MultiCatchBlocks {
     public static void main(String[] args) {
-        Employee employee=null;
+        Employee employee = null;
         try {
             System.out.println(employee.getSalary());
-        }catch(NullPointerException e){
+        } catch (NullPointerException e) {
             System.out.println("zero catch block");
             e.printStackTrace();
 
-        }
-        catch (IndexOutOfBoundsException e){
+        } catch (IndexOutOfBoundsException e) {
             System.out.println("first catch block");
             e.printStackTrace();
 
-        } catch (ArithmeticException e){
+        } catch (ArithmeticException e) {
             System.out.println("second catch block");
             e.printStackTrace();
 
-        } catch (ClassCastException e){
+        } catch (ClassCastException e) {
             System.out.println("third catch block");
 
             e.printStackTrace();
-        } catch (RuntimeException e){
+        } catch (RuntimeException e) {
             System.out.println("fourth catch block");
             e.printStackTrace();
         }
@@ -32,5 +31,13 @@ public class MultiCatchBlocks {
 
         System.out.println("test completed");
 
+
+        System.out.println("----------------------------");
+        try {
+            System.out.println("Java".charAt(-1));
+
+        } catch (RuntimeException e) {
+            e.printStackTrace();
+        }
     }
 }
