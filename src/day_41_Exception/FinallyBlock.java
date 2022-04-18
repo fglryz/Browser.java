@@ -1,4 +1,4 @@
-package day_41;
+package day_41_Exception;
 
 public class FinallyBlock {
     public static void main(String[] args) {
