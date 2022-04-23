@@ -3,7 +3,7 @@ package week5;
 import java.util.ArrayList;
 
 public class TJMaxx {
-    /**
+    /*
      * Private lists to hold regular Item objects
      * and OnSaleItem objects that represent items that are sold in TJMaxx
      */
@@ -11,7 +11,7 @@ public class TJMaxx {
     private ArrayList<Item> items;
     private ArrayList<OnSaleItem> onSaleItems;
 
-    /**
+    /*
      * Public no-args constructor - Instantiates regularItems and onSaleItems lists
      * as new ArrayList
      */
@@ -21,7 +21,7 @@ public class TJMaxx {
 
     }
 
-    /**
+    /*
      * adds an item object to regularItems list
      * @param itemName
      */
@@ -30,7 +30,7 @@ public class TJMaxx {
         this.items.add(itemName);
     }
 
-    /**
+    /*
      * adds OnSaleItem object to onSaleItems list
      * @param itemName
      */
@@ -39,7 +39,7 @@ public class TJMaxx {
         this.onSaleItems.add(itemName);
     }
 
-    /**
+    /*
      * getter for regularItems
      * @return
      */
@@ -47,7 +47,7 @@ public class TJMaxx {
         return this.items;
     }
 
-    /**
+    /*
      * getter for onSaleItems
      * @return
      */
@@ -56,7 +56,7 @@ public class TJMaxx {
         return onSaleItems;
     }
 
-    /**
+    /*
      * return count of regularItem object
      * @return
      */
@@ -65,7 +65,7 @@ public class TJMaxx {
         return items.size();
     }
 
-    /**
+    /*
      * returns count of onSaleItems in TJ Maxx
      * @return
      */
@@ -74,7 +74,7 @@ public class TJMaxx {
         return onSaleItems.size();
     }
 
-    /**
+    /*
      * returns the name of each item in TJ Maxx starting
      * from regular item then onSaleItems
      * @return
@@ -96,7 +96,7 @@ public class TJMaxx {
         return names;
     }
 
-    /**
+    /*
      * gets catalog number and returns price for the item
      * it will search for the item both regularItems and onsaleonSaleItems
      * @param catalogNumber
@@ -117,7 +117,7 @@ public class TJMaxx {
 
         return 0.0;
     }
-    /**
+    /*
      * accepts a name then searches
      * amoung onSaleItems. Once it finds, the method will return
      * that OnSaleItem object
@@ -136,7 +136,7 @@ public class TJMaxx {
         return null;
     }
 
-    /**
+    /*
      * removes the item with matching catalogNumber
      * from both regularItems and onSaleItems.
      * Does nothing if not found
@@ -144,7 +144,7 @@ public class TJMaxx {
      */
 
 
-    /**
+    /*
      * - it accepts a catalog number and finds that item
      * among regularItems and onSaleItems
      * - if it finds the item:
