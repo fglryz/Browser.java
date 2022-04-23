@@ -1,6 +1,4 @@
-package day_42_Exceptions;
-
-import day4_variables.Regtangle;
+package day42_Exceptions;
 
 import java.util.NoSuchElementException;
 

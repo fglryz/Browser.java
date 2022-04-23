@@ -1,7 +1,5 @@
-package day_42_Exceptions;
+package day42_Exceptions;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

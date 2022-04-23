@@ -1,8 +1,4 @@
-package day_42_Exceptions;
-
-import utilities.Sleep;
-
-import javax.swing.text.Utilities;
+package day42_Exceptions;
 
 public class DisadvantageOfThrowsKeyword {
 

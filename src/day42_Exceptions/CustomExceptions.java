@@ -1,4 +1,5 @@
-package day_42_Exceptions;
+package day42_Exceptions;
+
 class FadyException extends RuntimeException{
 
     public FadyException(){

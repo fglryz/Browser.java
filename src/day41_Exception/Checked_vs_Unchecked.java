@@ -1,4 +1,4 @@
-package day_41_Exception;
+package day41_Exception;
 
 import day39_Recap.cydeoTask.Student;
 
