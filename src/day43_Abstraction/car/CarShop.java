@@ -20,6 +20,10 @@ public class CarShop {
         audi.setColor("Pink");
         tesla.setColor("Green");
 
+        honda.setPrice(25000);
+        audi.setPrice(40000);
+        tesla.setPrice(90000);
+
         System.out.println(honda);
         System.out.println(audi);
         System.out.println(tesla);
