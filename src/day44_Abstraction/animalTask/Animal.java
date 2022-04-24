@@ -69,9 +69,9 @@ public abstract class Animal {
         System.out.println(name+" is drinking");
     }
 
-    @Override
+
     public String toString() {
-        return "Animal{" +
+        return getClass().getSimpleName()+"{" +
                 "name='" + name + '\'' +
                 ", breed='" + breed + '\'' +
                 ", gender=" + gender +
