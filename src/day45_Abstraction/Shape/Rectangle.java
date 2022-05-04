@@ -1,16 +1,20 @@
 package day45_Abstraction.Shape;
 
-public class Cylinder extends  Shape implements Volume{
+public class Rectangle extends Shape{
     private double radius;
 
     public final static double pi = 3.14;
 
     private double height;
 
-    public Cylinder(double radius, double height) {
+    public Rectangle(double radius, double height) {
         super("Cylinder");
         setRadius(radius);
         setHeight(height);
+    }
+
+    public Rectangle(String name) {
+        super(name);
     }
 
     public double getRadius() {
@@ -45,16 +49,12 @@ public class Cylinder extends  Shape implements Volume{
         return 2*(2*radius)+2*height;
     }
 
-    @Override
-    public double volume() {
-        return pi*radius*radius*height;
-    }
+
 
     @Override
     public String toString() {
         return "Cylinder{" +
                 super.toString()+
-                "volume=" + volume() +
                 ", radius=" + radius +
                 ", height=" + height +
                 '}';
