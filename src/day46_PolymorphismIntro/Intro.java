@@ -1,6 +1,5 @@
-package PolymorphismIntro;
+package day46_PolymorphismIntro;
 
-import day37_Inheritance.animalTask.AnimalObject;
 import day39_Recap.shape.Circle;
 import day39_Recap.shape.Rectangle;
 import day39_Recap.shape.Shape;
@@ -10,7 +9,6 @@ import day44_Abstraction.animalTask.Animal;
 import day44_Abstraction.animalTask.Cat;
 import day44_Abstraction.animalTask.Dog;
 import day44_Abstraction.animalTask.Playable;
-import day45_Abstraction.Shape.Triangle;
 
 import java.util.ArrayList;
 

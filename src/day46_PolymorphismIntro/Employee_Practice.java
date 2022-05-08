@@ -1,7 +1,6 @@
-package PolymorphismIntro;
+package day46_PolymorphismIntro;
 
 
-import day37_Inheritance.scrumTeam.ScrumMaster;
 import day43_Abstraction.Employee.Developer;
 import day43_Abstraction.Employee.Employee;
 import day43_Abstraction.Employee.Tester;
@@ -81,7 +80,8 @@ public class Employee_Practice {
                     }
                 }
 
-            }}
+            }
+}
 
 
 

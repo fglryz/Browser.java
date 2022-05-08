@@ -3,8 +3,8 @@ package day45_Abstraction.Shape;
 public class Square extends Shape{
     private double side;
 
-    public Square(String name, double side) {
-        super(name);
+    public Square( double side) {
+        super("Square");
         setSide(side);
     }
 
@@ -12,22 +12,20 @@ public class Square extends Shape{
         return side;
     }
 
-
     public void setSide(double side) {
-        if(side<=0){
-            throw new RuntimeException("Invalid side "+ side);
+        if(side <= 0){
+            throw new RuntimeException("Invalid Side: "+side);
         }
         this.side = side;
     }
 
-    @Override
+
     public double area() {
-        return side*side;
+        return side * side;
     }
 
-    @Override
     public double perimeter() {
-        return side*4;
+        return side * 4;
     }
 
     @Override

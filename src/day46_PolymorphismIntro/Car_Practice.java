@@ -1,4 +1,4 @@
-package PolymorphismIntro;
+package day46_PolymorphismIntro;
 
 import day38_Inheritance.BMW;
 import day38_Inheritance.Car;
