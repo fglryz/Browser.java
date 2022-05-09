@@ -38,47 +38,46 @@ public class Car_Practice {
         Tesla: from year 2015-2016 */
         for (Car eachCar : cars) {
             if(eachCar instanceof Toyota && eachCar.year>=2010 && eachCar.year<=2011){
-                toyotas.add((Toyota)eachCar);
+                //toyotas.add((Toyota)eachCar);
+                System.out.println("eachCar = " + eachCar);
             }
             if(eachCar instanceof BMW && eachCar.year>=1929 && eachCar.year<=2022){
-                bmws.add((BMW) eachCar);
+                //bmws.add((BMW) eachCar);
+                System.out.println("eachCar = " + eachCar);
             }
             if(eachCar instanceof Tesla && eachCar.year>=2015 && eachCar.year<=2016){
-                teslas.add((Tesla)eachCar);
+                //teslas.add((Tesla)eachCar);
+                System.out.println("eachCar = " + eachCar);
             }
         }
 
-        System.out.println(toyotas);
-        System.out.println(bmws);
-        System.out.println(teslas);
+
 
 
         System.out.println("------------------------------------");
-            //// 1.3 Write a program that can display the car that has the highest mileage
-    int highestMile=0;
-    for(Car eachCar:cars){
-        if(eachCar.miles>=highestMile){
-            highestMile=eachCar.miles;
-        }
-    }
-    for(Car eachCar:cars){
-        if(highestMile==eachCar.miles){
-            System.out.println(eachCar);
-        }
-    }
-        int lowestMileage = highestMile;
+            // 1.3 Write a program that can display the car that has the highest mileage
+    //int highestMile=0;
+        Car carWithHighestMileage = cars[0],
+                carWithLowestMileage =  cars[0];
+
 
         for (Car eachCar : cars) {
-            if(eachCar.miles < lowestMileage){
-                lowestMileage = eachCar.miles;
+            if(eachCar.miles > carWithHighestMileage.miles){
+                carWithHighestMileage = eachCar;
             }
-        }
-        for (Car eachCar : cars) {
-            if(eachCar.miles == lowestMileage){
-                System.out.println(eachCar);
+
+            if(eachCar.miles < carWithLowestMileage.miles){
+                carWithLowestMileage = eachCar;
             }
+
         }
 
-        }}
+        System.out.println(carWithHighestMileage);
+        System.out.println(carWithLowestMileage);
+
+
+
+
+    }}
 
 

@@ -34,54 +34,51 @@ public class Employee_Practice {
 
                 //2.1 store all the developers & testers into the following List of employees
                 List<Employee> scrumMembers = new ArrayList<>();
+        for (Employee eachEmployee : employees) {
+            List<Tester> testers = null;
+            List<Developer> developers = null;
+            if (eachEmployee instanceof Tester || eachEmployee instanceof Developer) {
+                scrumMembers.add(eachEmployee);
                 // 2.2 store all the testers into the following List of testers:
-                List<Tester> testers = new ArrayList<>();
+                testers = new ArrayList<>();
+                for (Employee scrumMember : scrumMembers) {
+                    if (scrumMember instanceof Tester) {
+                        testers.add((Tester) scrumMember);
+                    }
+                }
 
                 //2.3 store all the developers into the following List of developers:
-                List<Developer> developers = new ArrayList<>();
-                System.out.println("developers = " + developers);
-
-
-                for (Employee eachEmployee : employees) {
-                    if (eachEmployee instanceof Tester) {
-                        testers.add((Tester) eachEmployee);
+                developers = new ArrayList<>();
+                for (Employee scrumMember : scrumMembers) {
+                    if (scrumMember instanceof Developer) {
+                        developers.add((Developer) scrumMember);
                     }
-                    if (eachEmployee instanceof Developer) {
-                        developers.add((Developer) eachEmployee);
-                    }
-
-                    System.out.println("developers = " + developers);
-                    System.out.println("testers = " + testers);
-                    System.out.println("scrumMembers = " + scrumMembers);
-
                 }
+            }
 
 //2.4 which tester has the maximum salary?
-                double maxSalary = 0;
-                for (Tester eachTester : testers) {
-                    if (eachTester.getSalary() >= maxSalary) {
-                        maxSalary = eachTester.getSalary();
-                    }
-                }
-                for (Tester eachTester : testers) {
-                    if (eachTester.getSalary() == maxSalary) {
-                        System.out.println("Tester's maxSalary = " + maxSalary);
-                    }
-                }
-               // 2.5 which developer has the maximum salary?
-                for (Developer eachDeveloper : developers) {
-                    if (eachDeveloper.getSalary() >= maxSalary) {
-                        maxSalary = eachDeveloper.getSalary();
-                    }
-                }
-                for (Developer eachDeveloper : developers) {
-                    if (eachDeveloper.getSalary() == maxSalary) {
-                        System.out.println("Developer's maxSalary = " + maxSalary);
-                    }
-                }
 
+            Tester testerWithMaxSalary = testers.get(0);
+             Developer developerWithMaxSalary=developers.get(0);
+
+            for (Tester eachTester : testers) {
+                if (eachTester.getSalary() > testerWithMaxSalary.getSalary()){
+                    testerWithMaxSalary = eachTester;
+                }
             }
-}
+
+
+            // 2.5 which developer has the maximum salary?
+            for (Developer eachDeveloper : developers) {
+                if (eachDeveloper.getSalary() >= developerWithMaxSalary.getSalary()) {
+                    developerWithMaxSalary = eachDeveloper;
+                }
+            }
+            System.out.println("developerWithMaxSalary = " + developerWithMaxSalary);
+            System.out.println("testerWithMaxSalary = " + testerWithMaxSalary);
+
+        }}}
+
 
 
 
