@@ -7,7 +7,7 @@ public class SetExamples {
 
         // Does NOT allow duplicates: helps you to implement some coding algorithms
 
-        String str = "aaaabbbcccccddddeeee"; // str to char array
+        String str = "xxxyyyzzzaaaabbbcccccddddeeee"; // str to char array
         List<String> listOne = new ArrayList<>();
         listOne.addAll(Arrays.asList(str.split("")));
         System.out.println("listOne = " + listOne);
