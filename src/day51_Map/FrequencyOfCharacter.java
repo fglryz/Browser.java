@@ -19,7 +19,7 @@ public class FrequencyOfCharacter {
 
         for (String each : arr) { // each: characters of string
             int frequency = Collections.frequency( Arrays.asList(arr), each);
-            result.put(each,  frequency  );
+            result.put(each, frequency  );
         }
 
         System.out.println(result);
