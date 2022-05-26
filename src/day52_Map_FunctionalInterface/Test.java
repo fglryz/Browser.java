@@ -47,7 +47,6 @@ public class Test {
 divisiblBy3And5.apply(25);
 
 
-
     }
     }
 
