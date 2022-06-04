@@ -10,8 +10,8 @@ public class AvarageNumber_9 {
         sum += numbers[i];
 
     }
-         double avareNumber = sum / numbers.length;
+         double averageNumber = sum / numbers.length;
 
-        System.out.println("avareNumber = "+avareNumber);
+        System.out.println("averageNumber = "+averageNumber);
 }
 }

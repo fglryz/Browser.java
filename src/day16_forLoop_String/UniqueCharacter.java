@@ -10,7 +10,7 @@ public class UniqueCharacter {
         for(int i=0; i<str.length();i++ ) {
             String ch =""+str.charAt(i);
             if (str.indexOf(ch) == str.lastIndexOf(ch)) {//if the first and last index number of the character same then character
-                // is inique
+                // is unique
                 result += ch;
 
             }}

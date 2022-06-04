@@ -108,6 +108,7 @@ public class BuildInInterfaceFunction2 {
         int[] arr2 = {6,7,8};
 
         List<Integer> nums = merge.apply(arr1, arr2);
+        System.out.println("nums = " + nums);
 
         System.out.println("---------------------------------------");
         // 3. create a function that takes a  list of String and a list of Integer and merge them into a map

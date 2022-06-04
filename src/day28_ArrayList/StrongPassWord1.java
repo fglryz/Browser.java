@@ -4,14 +4,14 @@ public class StrongPassWord1 {
     public static void main(String[] args) {
 
         String password = "Cydeo1990%";
-        int countUppecase=0;
+        int  countUppercase=0;
         int  countLowercase=0;
-        int countDigits=0;
-        int countSpecialCharacter=0;
+        int  countDigits=0;
+        int  countSpecialCharacter=0;
         for (int i = 0; i <password.length() ; i++) {
             char each=password.charAt(i);
             if(Character.isUpperCase(each)){
-                countUppecase++;
+                countUppercase++;
             }
             else if (Character.isLowerCase(each)) {
                 countLowercase++;
@@ -23,11 +23,11 @@ public class StrongPassWord1 {
         }
         System.out.println("countSpecialCharacter = " + countSpecialCharacter);
         System.out.println("countLowercase = " + countLowercase);
-        System.out.println("countUppecase = " + countUppecase);
+        System.out.println("countUppecase = " + countUppercase);
         System.out.println("countDigits = " + countDigits);
 
-        boolean hasUpperCase=countUppecase>0;
-        boolean hasLoverCase=countUppecase>0;
+        boolean hasUpperCase=countUppercase>0;
+        boolean hasLoverCase=countUppercase>0;
         boolean hasDigits=countDigits>0;
         boolean hasSpecialCharacters=countSpecialCharacter>0;
         boolean strongPassword=password.length()>=8&&!password.contains(" ")&&hasUpperCase&&hasDigits&&
